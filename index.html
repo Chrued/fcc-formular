@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="autor" content="chrued">
+        <meta name="descripción" content="challenge freecodecamp survey form">
+        <title>fcc Survey Form</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+     </head>
+   
+    <body>
+       
+
+        <div>
+            <h1 id="title">Encuesta: qué deporte quieres practicar y con quién?
+            </h1>
+            
+            <div class="formbox">
+            <p id="description">Para comenzar con nuestra primera página buscadora de amigos para practicar tu deporte favorito, necesitamos saber más sobre tus necesidades y preferencias. Por favor tomate unos minutos para llenar este formulario.
+            </p>
+
+            <form id="survey-form">
+                <div class="inputs">
+                    <input id="name" required placeholder="Nombre o Alias">
+                        <label id="email-label"><br><br>Escribe tu nombre o un alias</label></input>
+
+                <br>
+                <br>
+                <br>
+ 
+                    <input  type="email" name="email" id="email"  class="form-control" required placeholder="Correo electrónico" required/>
+                        <label id="name-label"><br><br>Aquí puedes poner tu correo electrónico</label></input>
+
+    
+
+                <br>
+                <br>
+                <br>
+
+                    <input id="number" type="number" min="1" max="5" required placeholder="Nivel de Experiencia">
+                        <label id="number-label"><br><br>Coloca una cifra del 1 al 5 según tu nivel.
+                            <br>
+                            <em>El <strong>1</strong> es nivel principiante o sin experiencia y el <strong>5</strong> es nivel avanzado / profesional.</em></label></input>
+
+                <br>
+                <br>
+                <br>
+                </div>
+
+                Aquí puedes seleccionar el formato en el que te gustaría practicar:
+                <br>
+                <br>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Elije una opción</option>
+                                   <option value="con una persona">Uno a uno con alguien de mi mismo nivel</option>
+                                    <option value="con varias personas">Con un grupo de personas del mismo nivel</option>
+                                    <option value="cuando quiero mejorar ocn alguien que sabe más">Con otra persona que tenga un nivel más avanzado que yo</option>
+                                    <option value="cuando tengo tiempo sin practicar y quiero comenzar con alguien de un nivel menor al mío">Con otra persona que tenga un nivel menor que el mío</option>
+                                    <option value="cuando quiero practicar ocn personas de diferentes niveles">Con un grupo de personas de diferentes niveles</option>
+                                    <option value="cuando me siento lo suficiente seguro com para entrenar a alguien">Yo como entreneador</option>
+                                    <option value="cuando necesito a un entrenador">Yo como aprendiz</option>
+                                </select>
+
+                <div class="radio">
+
+                Aquí puedes seleccionar si prefieres practicar con mujeres, hombres o mixto.
+
+                
+                <br>
+                <br>
+            
+                    <input type="radio" name="genero" value="Mujeres">Mujeres<br>
+                    <input type="radio" name="genero" value="Hombres">Hombres<br>
+                    <input type="radio" name="genero" value="Mixto">Mixto<br>
+                    
+        
+                <br>
+                <br>
+                </div>
+
+                <div class="form-group">
+                
+                        Puedes seleccionar el deporte de tu interés de la siguiente lista. Más abajo hemos dejado un espacio en blanco para que puedas comunicarnos los deportes que no estén en la lista y que sean de tu interés, también podrás agregar ahí cualquier otro comentario.
+                      <span class="clue">Elija tantos como quieras</span>
+                      <br>
+                      <br>
+                
+              
+                    <label><input name="preferencia" value="Tenis" type="checkbox" class="input-checkbox"/>Tenis</label><br>
+                    <label><input name="preferencia" value="Natación" type="checkbox" class="input-checkbox"/>Natación</label><br>
+                    <label><input name="preferencia" value="Fútbol Soccer" type="checkbox" class="input-checkbox"/>Fútbol Soccer</label><br>
+                    <label><input name="preferencia" value="Ping Pong" type="checkbox" class="input-checkbox"/>Ping Pong</label><br>
+                    <label><input name="preferencia" value="Hockey" type="checkbox" class="input-checkbox"/>Hockey</label><br>
+                    <label><input name="preferencia" value="Patinajetbol Soccer" type="checkbox" class="input-checkbox"/>Patinaje</label><br>
+                    <label><input name="preferencia" value="Bouldern" type="checkbox" class="input-checkbox"/>Bouldern</label><br>
+                    <label><input name="preferencia" value="Basketball" type="checkbox" class="input-checkbox"/>Basketball</label><br>
+                    <label><input name="preferencia" value="Buceo" type="checkbox" class="input-checkbox"/>Buceo</label><br>
+                    <label><input name="preferencia" value="Surfeo" type="checkbox" class="input-checkbox"/>Surfeo</label><br>
+                </div>
+              <br>
+              <br>
+                <div>
+                En esta última seción puedes agregar otros deportes que aún no tenemos en nuestra lista o caulquier otro comentario que tengas.
+                <br>
+                <br>
+                <textarea name="Comentarios" cols="50" rows="15" required placeholder="espacio para tus comentarios..."></textarea>
+                <br>
+                <br>
+                <button id="Submit">Enviar</button>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>
